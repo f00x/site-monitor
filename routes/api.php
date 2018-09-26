@@ -19,4 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     
     
 });
-Route::get('/site/event/register', 'API\EventPositionController@store');
+Route::post('/site/event/register', 'API\EventPositionController@store');
