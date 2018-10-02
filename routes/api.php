@@ -20,3 +20,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     
 });
 Route::post('/site/event/register', 'API\EventPositionController@store');
+
+Route::get('/site/event-list/{site}', 'API\EventPositionController@showBySite');
+Route::middleware('adminka:index')->get('/site/list', 'API\SiteController@index');

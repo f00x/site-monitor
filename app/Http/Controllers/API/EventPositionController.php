@@ -42,6 +42,16 @@ class EventPositionController extends Controller {
     public function show(EventPosition $eventPosition) {
         //
     }
+     /**
+     * Display the specified resource.
+     *
+     * @param  \App\Site  $site
+     * @return Response
+     */
+    public function showBySite(Site $site) {
+       
+        return response()->json( $site->getListEventPosition()->get()->toArray()); 
+    }
 
     /**
      * Update the specified resource in storage.
