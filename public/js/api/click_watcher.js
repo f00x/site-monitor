@@ -2,7 +2,7 @@ watcher = function () {
 
 //    console.log(this.getSourcePath());
 var th = this;
-this.loadScriptLibrary(this.getSourcePath()+'/js/lib/f00x/f00x-3.1.0.js',function(){
+this.loadScriptLibrary(this.getSourcePath()+'/bower_components/f00x-js/f00x-3.1.0.js',function(){
     th.addEventClick()
 });
 
