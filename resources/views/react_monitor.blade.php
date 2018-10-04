@@ -7,10 +7,10 @@
 
         <title>Adminka</title>
 
-        
+        <script src="/bower_components/f00x-js/f00x-3.1.0.js" ></script>
         <script src="/bower_components/react/react.development.js" ></script>
         <script src="/bower_components/react/react-dom.development.js" ></script>
-        <script src="/react/monitor_site.js" ></script>
+        
         <!-- Styles -->
         <style>
             html, body {
